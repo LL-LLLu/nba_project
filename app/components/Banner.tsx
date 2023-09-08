@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import nba_banner from '../../public/video/nba_banner.mp4'
 
@@ -7,7 +9,7 @@ const Banner = () => {
 
 
   return (
-    <div className='mt-10 h-[1000px]'>
+    <div className='mt-10 h-[800px]'>
         <div>
             <div className='relative h-[400px] md:h-[700px]'>
                 <video
