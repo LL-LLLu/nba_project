@@ -41,12 +41,46 @@ async function PlayerRank(){
             
     return (
     <div className='text-center items-center justify-center p-10'>
-        <div>
-            <div>
+        <div className='flex flex-row justify-center p-10 items-center space-x-4 space-y-4'>
+            <div className='flex flex-col space-y-2'>
                 {topTenByPts.map((player:any,idx:any)=>(
-
-                <Card className='max-w-xs mx-auto'>
-                    <Title>{player.player.first_name}{" "} {player.player.last_name}</Title>
+                <Card 
+                    decoration='top'
+                    decorationColor='red'
+                    className='max-w-xs mx-auto'>
+                    <div>
+                        <Title>{player.player.first_name}{" "} {player.player.last_name}</Title>
+                        <Text>{player.reb} reb</Text>
+                        <Text>{player.ast} ast</Text>
+                    </div>
+                </Card>
+                ))}
+            </div>
+            <div className='flex flex-col space-y-2'>
+                {topTenByPts.map((player:any,idx:any)=>(
+                <Card 
+                    decoration='top'
+                    decorationColor='red'
+                    className='max-w-xs mx-auto'>
+                    <div>
+                        <Title>{player.player.first_name}{" "} {player.player.last_name}</Title>
+                        <Text>{player.reb} reb</Text>
+                        <Text>{player.ast} ast</Text>
+                    </div>
+                </Card>
+                ))}
+            </div>
+            <div className='flex flex-col space-y-2'>
+                {topTenByPts.map((player:any,idx:any)=>(
+                <Card 
+                    decoration='top'
+                    decorationColor='red'
+                    className='max-w-xs mx-auto'>
+                    <div>
+                        <Title>{player.player.first_name}{" "} {player.player.last_name}</Title>
+                        <Text>{player.reb} reb</Text>
+                        <Text>{player.ast} ast</Text>
+                    </div>
                 </Card>
                 ))}
             </div>
